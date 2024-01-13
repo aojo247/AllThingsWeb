@@ -3,10 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tables</title>
 </head>
 <body>
-    
+    <h1>Tables!</h1>
+    <table border="1">
+        <thead>
+            <th>Number</th>
+            <th>Color</th>
+            <th>Country</th>
+            <th>Country Flag</th>
+        </thead>
+        <tr>
+            <td>250</td>
+            <td>Red</td>
+            <td>USA</td>
+            <td><img src="usa_flag.gif"></td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>Blue</td>
+            <td>France</td>
+            <td><img src="france_flag.gif"></td>
+        </tr>
+    </table>
+    <h1>FORMS</h1>
+    <form>    
+        <h2>Log In</h2>
+        <h3>Please Input your username and password</h3>
+
+        <input type="email" name="UserEmail", value="email here" >
+        <input type="password" name="UserPassword", value="" >
+        <input type="submit" name="", value="Submit!!" >
+    </form>
+
+    <h1>FORMS and LABELS</h1>
+    <form>
+        <!-- You can use the id to link the input to a label you can use id to uniquely identify an html tag-->
+        <label for="userinput">Enter Input:</label>
+        <input id="userinput" type="text" name="" value="HelloWorld">
+    </form>
+
+    <h1>FORMS and LABELS2</h1>
+    <form>
+        <input type="text" name="", placeholder="not required" >
+        <input type="text" name="", placeholder="Required" required >
+        <input type="submit" name="", value="Submit!!" >
+    </form>
+
+    <h1>FORMS and Selections</h1>
+    <h2>Hotel Feedback Form</h2>
+    <form>
+        <!-- In order to prevent 2 radio buttons to be selected simultaneously, set the name to be the same.-->
+        <h3>Are you from the US?</h3>
+
+        <label for="in_usa">Inside:</label>
+        <input id="in_usa" type="radio" name="loc" value="inside">
+        
+        <label for="out_usa">Outside:</label>
+        <input id="out_usa" type="radio" name="loc" value="outside">
+
+        <h3>How was your service?</h3>
+
+        <select name="stars">
+            <option value="Great">3</option>
+            <option value="Okay">2</option>
+            <option value="Bad">1</option>
+        </select>
+
+        <input type="submit" value="Submit!">
+
+        <h3>Any other Feedback?</h3>
+
+        <textarea name="mytext" cols="80" rows="10"></textarea>
+        <p></p>
+        <input type="submit" value="Submit!!">
+    </form>
 </body>
 </html>
 
